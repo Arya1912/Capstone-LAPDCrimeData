@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 import numpy as np
 from sklearn.cluster import KMeans
 
@@ -119,3 +120,10 @@ def apply_k_tournament(df, k_list):
         df_temp['cluster_id'] = kmeans.fit_predict(df_temp[['LAT', 'LON']])
         datasets[k] = df_temp
     return datasets
+
+def print_cluster_summary(df, label):
+    print(f"\n{label} Statistics")
+    # Grouping by cluster to see the 'weight' of each zone
+    summary = df.groupby('cluster_id').size().reset_index(name='Total_Crimes')
+    summary['Percentage'] = (summary['Total_Crimes'] / len(df) * 100).round(2)
+    print(summary)
