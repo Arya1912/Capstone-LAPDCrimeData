@@ -1,0 +1,11 @@
+# Ignore local data
+data/raw/
+data/*.csv
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore IDE settings
+.vscode/
+.idea/

@@ -1,0 +1,31 @@
+# Data Manipulation & Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Statistical Analysis & Diagnostics
+# Required for Chi-Square Test of Independence and Cramer's V
+scipy>=1.10.0
+statsmodels>=0.14.0  # For the ARIMA baseline
+
+# Machine Learning & Clustering
+# For K-Means, Elbow Method, and Naive Bayes
+scikit-learn>=1.2.0
+
+# Deep Learning (Predictive Tournament)
+# Powering the Stacked LSTM and GRU architectures
+tensorflow>=2.12.0
+keras>=2.12.0
+
+# Visualization & Dashboarding 
+# For the Command Dashboard and EDA plots
+matplotlib>=3.7.0
+seaborn>=0.12.0
+streamlit>=1.22.0  # The UI layer for patrol commanders
+folium>=0.14.0     # For interactive GPS cluster maps
+
+# Utilities
+python-dotenv>=1.0.0
+
+
+
+# pip install -r requirements.txt
